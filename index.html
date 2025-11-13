@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>HTML Documentation</title>
+</head>
+<body>
+<nav id="navbar">
+    <header id="header">HTML Documentation</header>
+    <a class="nav-link" href="#Introduction">Introduction</a>
+    <a class="nav-link" href="#History_of_HTML">History of HTML</a>
+    <a class="nav-link" href="#Purpose_of_HTML">Purpose of HTML</a>
+    <a class="nav-link" href="#How_HTML_Works">How HTML Works</a>
+    <a class="nav-link" href="#Basic_Structure_of_an_HTML_Document">Basic Structure of an HTML Document</a>
+    <a class="nav-link" href="#Common_HTML_Elements">Common HTML Elements</a>
+    <a class="nav-link" href="#Semantic_HTML">Semantic HTML</a>
+    <a class="nav-link" href="#HTML_vs_CSS_vs_JavaScript">HTML vs CSS vs JavaScript</a>
+    <a class="nav-link" href="#Importance_of_HTML_in_Web_Development">Importance of HTML in Web Development</a>
+    <a class="nav-link" href="#Conclusion">Conclusion</a>
+</nav>
+<main id="main-doc">
+    <section class="main-section" id="Introduction">
+        <header>Introduction </header>
+        <p> HTML, or HyperText Markup Language, is the standard markup language used for creating and structuring web pages. It provides the basic framework that tells a browser how to display text, images, links, and other elements on a webpage. Every website on the internet is built using HTML, making it the foundation of web development.</p>
+    </section>
+
+    <section class="main-section" id="History_of_HTML">
+        <header>History of HTML </header>
+        <p> HTML was created in 1991 by Tim Berners-Lee, a British computer scientist, while working at CERN. It was designed to allow researchers to share documents over the internet easily.
+            Over time, HTML has evolved through several versions:</p>
+            <ul>
+                <li>HTML 2.0 (1995): First official standard</li>
+                <li>HTML 3.2 (1997): Added better layout and visual features</li>
+                <li>HTML 4.01 (1999): Widely used for early websites</li>
+                <li>XHTML (2000s): A stricter version of HTML</li>
+                <li>HTML5 (2014): Modern standard with multimedia support</li>
+            </ul>
+            <p>Today, HTML is the most advanced version, enabling videos, audio, animations, and better website structure.</p>
+    </section>
+
+    <section class="main-section" id="Purpose_of_HTML">
+        <header>Purpose of HTML </header>
+        <p>The main purpose of HTML is to structure the content of a webpage. It allows developers to define:</p>
+            <ul>
+                <li>Headings and paragraphs</li>
+                <li>Images and multimedia</li>
+                <li>Links and buttons</li>
+                <li>Lists and tables</li>
+                <li>Forms and input fields</li>
+                <li>Page sections and layout</li>
+            </ul>
+           <p> HTML works together with CSS for styling and JavaScript for interactivity.</p>
+    </section>
+
+    <section class="main-section" id="How_HTML_Works">
+        <header>How HTML Works </header>
+        <p>HTML uses tags to describe content. Tags are instructions inside angle brackets, such as:</p>
+            <ul>
+                <li> <code> &lt;p&gt; </code>--paragraph</li>
+                <li> <code> &lt;h1&gt; </code>--heading</li>
+                <li> <code> &lt;img&gt; </code>--image</li>
+                <li> <code> &lt;a&gt; </code>--link </li>
+            </ul>
+            <p>HTML elememnts often come in pairs:</p>
+            <ul> <li> <div> <code> &lt;p&gt;This is a paragraph.&lt;/p&gt;</code> </div> </li> </ul> 
+            <p>Some tags are self-closing:</p>
+            <ul> <li> <div> <code>&lt;img src="img.jpg"&gt;</code> </div> </li> </ul>
+            <p>HTML also uses attributes to provide extra information, like:</p>
+            <ul> <li> <div> <code>&lt;a href="https://www.google.com"&gt;Visit Google&lt;/a&gt;</code> </div> </li> </ul>
+    </section>
+
+    <section class="main-section" id="Basic_Structure_of_an_HTML_Document">
+        <header>Basic Structure of an HTML Document </header>
+        <p>A typical HTML file follows this basic structure:</p>
+            <code>
+               <div>&lt;!DOCTYPE html&gt;</div> 
+                <div>&lt;html&gt;</div> 
+                <div>&lt;head&gt;</div> 
+                    <div>&lt;title&gt; My Website &lt;/title&gt;</div> 
+                <div>&lt;/head&gt;</div> 
+                <div>&lt;body&gt;</div> 
+                    <div>&lt;h1 Hello World &lt;/h1&gt;</div> 
+                    <div>&lt;p&gt; This is a simple webpage. &lt;/p&gt;</div> 
+                <div>&lt;/body&gt;</div> 
+                <div>&lt;/html&gt;</div>
+            </code>
+            <div id="breakdown">Breakdown</div>
+            <ul>
+                <li> <code>&lt;!DOCTYPE html&gt;</code> - tells the browser that the document uses HTMLS</li>
+                <li> <code>&lt;html&gt;</code> - the root element</li>
+                <li> <code>&lt;head&gt;</code> - contains metadata and the webpage title</li> 
+                <li> <code>&lt;body&gt;</code> - contains everything that appears on the screen</li>
+            </ul>
+    </section>
+
+    <section class="main-section" id="Common_HTML_Elements">
+        <header>Common HTML Elements </header>
+        <p>Text Elements</p>
+            <ul>
+                <li>&lt;h1&gt; to &lt;h6&gt; -- Headings</li>
+                <li>&lt;p&gt; -- Paragraph</li>
+                <li>&lt;strong&gt; -- Bold Text</li> 
+                <li>&lt;em&gt; -- Emphasis(italic)</li>
+            </ul>
+            <div>Links & Media</div> 
+            <ul>
+                <li>&lt;a&gt; -- Hyperlink</li>
+                <li>&lt;img&gt; -- Image</li> 
+                <li>&lt;video&gt; -- Video</li> 
+                <li>&lt;audio&gt; -- Audio</li>
+            </ul>
+            <div>Lists</div> 
+            <ul>
+                <li>&lt;ul&gt; -- unordered list</li>
+                <li>&lt;ol&gt; -- ordered list </li>
+                <li>&lt;li&gt; -- list item</li>
+            </ul>
+            <div>Tables</div> 
+            <ul>
+                <li>&lt;table&gt; -- table</li>
+                <li>&lt;tr&gt; -- table row</li>
+                <li>&lt;td&gt; -- table cell</li>
+                <li>&lt;th&gt; -- table header</li>
+            </ul>
+            <div>Forms</div>
+            <ul>
+                <li>&lt;form&gt; -- form container</li>
+                <li>&lt;input&gt; -- text fields, buttons</li>
+                <li>&lt;textarea&gt; -- long text input</li>
+                <li>&lt;button&gt; -- button</li>
+            </ul>
+    </section>
+
+    <section class="main-section" id="Semantic_HTML">
+        <header>Semantic HTML </header>
+        <p>
+            Semantic HTML involves using tags that describe meaning rather than appearance.
+            Examples:</p>
+            <ul>
+                <li>&lt;header&gt; -- top section</li>
+                <li>&lt;nav&gt; -- navigation menu</li>
+                <li>&lt;section&gt; -- main sections</li>
+                <li>&lt;article&gt; -- independent content</li>
+                <li>&lt;aside&gt; -- sidebar</li>
+                <li>&lt;footer&gt; -- bottom section</li>
+            </ul> 
+            <div>Benefits:</div> 
+            <ul>
+                <li>Better for screen readers</li>
+                <li>Improves SEO</li>
+                <li>Makes code cleaner and easier to understand</li>
+            </ul>
+    </section>
+
+    <section class="main-section" id="HTML_vs_CSS_vs_JavaScript">
+        <header>HTML vs CSS vs JavaScript </header>
+        <p>This table explains the differences between HTML, CSS, and JavaScript and how they work together to build a webpage.</p>
+
+        <table border="1" cellpadding="10" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Language</th>
+                    <th>Purpose</th>
+                    <th>What It Controls</th>
+                    <th>Example Usage</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><code>HTML</code></td>
+                    <td>Structure of the webpage</td>
+                    <td>Content: headings, paragraphs, images, links, sections</td>   
+                    <td><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></td>   
+                </tr>
+
+                <tr>
+                    <td><code>CSS</code></td>
+                    <td>Styling and Layout</td>
+                    <td>Colors, Fonts, Borders, Spacing, Responsiveness</td>
+                    <td><code>p { color:blue; }</code></td>
+                </tr>
+
+                <tr>
+                    <td><code>JavaScript</code></td>
+                    <td>Interactivity and behavior</td>
+                    <td>Animations, Events, Dynamic Updates, Form Validation</td>
+                    <td><code>alert("Hello World");</code></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="main-section" id="Importance_of_HTML_in_Web_Development">
+        <header>Importance of HTML in Web Development</header>
+        <p>HTML is essential because:</p>
+        <ul>
+            <li>It is the foundation of all websites</li>
+            <li>Every web browser understands HTML</li>
+            <li>It works on all devices (phones, tablets, PCs)</li>
+            <li>It is required before learning CSS, JS, or Frameworks</li>
+            <li>HTML5 allows building dynamic, multimedia-rich websites</li>
+        </ul>
+        <p>Without HTML, modern web development would not exist</p>
+    </section>
+
+     <section class="main-section" id="Conclusion">
+        <header>Conclusion</header>
+        <p>HTML is the core language of the web. It defines the structure and layout of every web page and works together with CSS and JavaScript to create functional, visually appealing, and interactive websites. Understanding HTML is the first step toward becoming a web developer, and it remains one of the most important skills in modern technology.</p>
+    </section>
+</main>
+</body>
+</html>
