@@ -1,13 +1,13 @@
 #nav-header {
     text-align: center;
     font-size: 2rem;
+    font-weight: 800;
     margin-bottom: 10px;
-    border-bottom: 2px solid #021724;
-    padding-bottom: 5px;
-    font-weight: bolder;
+    border-bottom: 4px solid #021724;
     font-family: 'Poppins', sans-serif;
     color: #012e3a;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.3px;
+    padding-top: 5px;
 }
 
 #logo {
@@ -20,9 +20,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
+    line-height: 1.5;
+    padding-left: 40px;
     display: flex;
     background-color: rgba(0, 50, 94, 0.8);
     color: #f0eded;
@@ -51,7 +50,16 @@ body {
     overflow-y: auto;
     background-color: #5ce1e6;
     padding: 20px;
-    box-sizing: border-box;
+    border: 7px solid rgb(208, 208, 236);
+    border-radius: 10px;
+}
+
+#upper-head {
+    font-size: 3rem;
+    color: #ecf0f1;
+    padding-bottom: 5px;
+    text-align: left;
+    font-weight: 900;
 }
 
 #header {
@@ -71,8 +79,7 @@ body {
     padding: 8px;
     border-radius: 5px;
     transition: background-color 0.3s;
-    text-decoration: underline;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
@@ -88,10 +95,15 @@ body {
 
 .main-section header  {
     font-size: 1.5rem;
-    margin-bottom: 10px;
+    margin-top: 10px;
     color: #e9f4ff;
-    border-bottom: 2px solid #021724;
-    padding-bottom: 5px;
+    border-top: 4px solid #9ec3da;
+    padding-bottom: 10px;
+    
+}
+
+section {
+    padding-bottom: 10px;
 }
 
 table {
@@ -107,10 +119,17 @@ th, td {
 }
 
 th {
-    background-color: #2980b9;
+    background-color: #002136;
     color: white;
 }
 
+#footer {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: #f0eded;
+}
 @media (max-width: 768px) {
     #navbar {
         width: 200px;
