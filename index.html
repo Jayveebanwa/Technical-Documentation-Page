@@ -4,211 +4,314 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css">
-    <title>HTML Documentation</title>
+    <title>VS Code</title>
 </head>
 <body>
 <nav id="navbar">
-    <header id="header">HTML Documentation</header>
+    <img id="logo" src="logo.png" alt="logo">
+    <header id="nav-header">VS Code</header>
     <a class="nav-link" href="#Introduction">Introduction</a>
-    <a class="nav-link" href="#History_of_HTML">History of HTML</a>
-    <a class="nav-link" href="#Purpose_of_HTML">Purpose of HTML</a>
-    <a class="nav-link" href="#How_HTML_Works">How HTML Works</a>
-    <a class="nav-link" href="#Basic_Structure_of_an_HTML_Document">Basic Structure of an HTML Document</a>
-    <a class="nav-link" href="#Common_HTML_Elements">Common HTML Elements</a>
-    <a class="nav-link" href="#Semantic_HTML">Semantic HTML</a>
-    <a class="nav-link" href="#HTML_vs_CSS_vs_JavaScript">HTML vs CSS vs JavaScript</a>
-    <a class="nav-link" href="#Importance_of_HTML_in_Web_Development">Importance of HTML in Web Development</a>
+    <a class="nav-link" href="#Features_of_VS_Code">Features of VS Code</a>
+    <a class="nav-link" href="#Installation_Guide">Installation Guide</a>
+    <a class="nav-link" href="#Getting_Started">Getting Started</a>
+    <a class="nav-link" href="#Common_Shortcuts">Common Shortcuts</a>
+    <a class="nav-link" href="#Integrated_Terminal">Integrated Terminal</a>
+    <a class="nav-link" href="#Debugging_in_VS_Code">Debugging in VS Code</a>
+    <a class="nav-link" href="#Using_Git_in_VS_Code">Using Git in VS Code</a>
+    <a class="nav-link" href="#Customization_Options">Customization Options</a>
+    <a class="nav-link" href="#Troubleshooting_Tips">Troubleshooting Tips</a>
     <a class="nav-link" href="#Conclusion">Conclusion</a>
 </nav>
 <main id="main-doc">
     <section class="main-section" id="Introduction">
-        <header>Introduction </header>
-        <p> HTML, or HyperText Markup Language, is the standard markup language used for creating and structuring web pages. It provides the basic framework that tells a browser how to display text, images, links, and other elements on a webpage. Every website on the internet is built using HTML, making it the foundation of web development.</p>
+        <header><strong>Introduction</strong></header>
+        <p> 
+            Visual Studio Code (VS Code) is a lightweight, open-source code editor developed by Microsoft. It supports a wide range of programming languages and technologies, while providing powerful tools like IntelliSense, debugging, Git integration, and extensions. Its goal is to give developers a fast and efficient workflow for building modern applications.</p>
     </section>
 
-    <section class="main-section" id="History_of_HTML">
-        <header>History of HTML </header>
-        <p> HTML was created in 1991 by Tim Berners-Lee, a British computer scientist, while working at CERN. It was designed to allow researchers to share documents over the internet easily.
-            Over time, HTML has evolved through several versions:</p>
-            <ul>
-                <li>HTML 2.0 (1995): First official standard</li>
-                <li>HTML 3.2 (1997): Added better layout and visual features</li>
-                <li>HTML 4.01 (1999): Widely used for early websites</li>
-                <li>XHTML (2000s): A stricter version of HTML</li>
-                <li>HTML5 (2014): Modern standard with multimedia support</li>
-            </ul>
-            <p>Today, HTML is the most advanced version, enabling videos, audio, animations, and better website structure.</p>
+    <section class="main-section" id="Features_of_VS_Code">
+        <header><strong>Features of VS Code</strong></header>
+        <ol>
+            <li>
+                <strong>IntelliSense</strong>
+                <p>
+                    VS Code offers smart code completion, parameter info, quick info, and member lists. IntelliSense automatically suggests functions, variables, and syntax based on context and language.
+                </p>
+            </li>
+
+            <li>
+                <strong>Built-in Debugger</strong>
+                <p>
+                    VS Code has an integrated debugger that lets you run, inspect, and troubleshoot your code directly from the editor. You can add breakpoints, watch variables, and track execution flow.
+                </p>
+            </li>
+
+            <li>
+                <strong>Extensions Marketplace</strong>
+                <p>
+                    VS Code supports a massive library of extensions that enhance functionality. Examples:
+                </p>
+                <ul>
+                    <li>Language support (Python, Java, C++,PHP)</li>
+                    <li>Themes & icons</li>
+                    <li>Formatting tools (Prettier, ESLint)</li>
+                    <li>Framework tools (Reacy, Laravel, Django)</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Git & GitHub Integration</strong> 
+                <p>
+                    VS Code allows you to manage repositories, view changes, commit, push, pull, and resolve merge conflicts—all without leaving the editor.
+                </p>
+            </li>
+
+            <li>
+                <strong>Customization</strong>
+                <p>You can fully personlaize the editor:</p>
+                <ul>
+                    <li>Themes</li>
+                    <li>Font size and style</li>
+                    <li>Keybindings</li>
+                    <li>Layout and panel arrangement</li>
+                </ul>
+            </li>
+        </ol>
     </section>
 
-    <section class="main-section" id="Purpose_of_HTML">
-        <header>Purpose of HTML </header>
-        <p>The main purpose of HTML is to structure the content of a webpage. It allows developers to define:</p>
-            <ul>
-                <li>Headings and paragraphs</li>
-                <li>Images and multimedia</li>
-                <li>Links and buttons</li>
-                <li>Lists and tables</li>
-                <li>Forms and input fields</li>
-                <li>Page sections and layout</li>
-            </ul>
-           <p> HTML works together with CSS for styling and JavaScript for interactivity.</p>
-    </section>
+    <section class="main-section" id="Installation_Guide">
+        <header><strong>Installation Guide</strong></header>
+        <ol>
+            <li>
+                <strong>Download VS Code</strong>
+                <p>Visit the official website and download the installer for your operating system:</p>
+                <ul>
+                    <li>Windows</li>
+                    <li>macOS</li>
+                    <li>Linux</li>
+                </ul>
+            </li>
 
-    <section class="main-section" id="How_HTML_Works">
-        <header>How HTML Works </header>
-        <p>HTML uses tags to describe content. Tags are instructions inside angle brackets, such as:</p>
-            <ul>
-                <li> <code> &lt;p&gt; </code>--paragraph</li>
-                <li> <code> &lt;h1&gt; </code>--heading</li>
-                <li> <code> &lt;img&gt; </code>--image</li>
-                <li> <code> &lt;a&gt; </code>--link </li>
-            </ul>
-            <p>HTML elememnts often come in pairs:</p>
-            <ul> <li> <div> <code> &lt;p&gt;This is a paragraph.&lt;/p&gt;</code> </div> </li> </ul> 
-            <p>Some tags are self-closing:</p>
-            <ul> <li> <div> <code>&lt;img src="img.jpg"&gt;</code> </div> </li> </ul>
-            <p>HTML also uses attributes to provide extra information, like:</p>
-            <ul> <li> <div> <code>&lt;a href="https://www.google.com"&gt;Visit Google&lt;/a&gt;</code> </div> </li> </ul>
-    </section>
+            <li>
+                <strong>Install the Application</strong>
+                <p>Run the installer and follow these steps:</p>
+                <ol>
+                    <li>Accept the license agreement.</li>
+                    <li>Choose an installation location.</li>
+                    <li>Enable the "Add to PATH" option (recommended).</li>
+                    <li>Complete installation.</li>
+                </ol>
+            </li>
 
-    <section class="main-section" id="Basic_Structure_of_an_HTML_Document">
-        <header>Basic Structure of an HTML Document </header>
-        <p>A typical HTML file follows this basic structure:</p>
-            <code>
-               <div>&lt;!DOCTYPE html&gt;</div> 
-                <div>&lt;html&gt;</div> 
-                <div>&lt;head&gt;</div> 
-                    <div>&lt;title&gt; My Website &lt;/title&gt;</div> 
-                <div>&lt;/head&gt;</div> 
-                <div>&lt;body&gt;</div> 
-                    <div>&lt;h1 Hello World &lt;/h1&gt;</div> 
-                    <div>&lt;p&gt; This is a simple webpage. &lt;/p&gt;</div> 
-                <div>&lt;/body&gt;</div> 
-                <div>&lt;/html&gt;</div>
-            </code>
-            <div id="breakdown">Breakdown</div>
-            <ul>
-                <li> <code>&lt;!DOCTYPE html&gt;</code> - tells the browser that the document uses HTMLS</li>
-                <li> <code>&lt;html&gt;</code> - the root element</li>
-                <li> <code>&lt;head&gt;</code> - contains metadata and the webpage title</li> 
-                <li> <code>&lt;body&gt;</code> - contains everything that appears on the screen</li>
-            </ul>
-    </section>
+            <li>
+                <strong>Launching VS Code</strong> 
+                <p>
+                    Open the program from:
+                </p>
+                <ul>
+                    <li>Start Menu (Windows)</li>
+                    <li>Application folder (macOS)</li>
+                    <li>Terminal or app launcher (Linux)</li>
+                </ul>
+            </li>
+        </ol>
+        </section>
 
-    <section class="main-section" id="Common_HTML_Elements">
-        <header>Common HTML Elements </header>
-        <p>Text Elements</p>
-            <ul>
-                <li>&lt;h1&gt; to &lt;h6&gt; -- Headings</li>
-                <li>&lt;p&gt; -- Paragraph</li>
-                <li>&lt;strong&gt; -- Bold Text</li> 
-                <li>&lt;em&gt; -- Emphasis(italic)</li>
-            </ul>
-            <div>Links & Media</div> 
-            <ul>
-                <li>&lt;a&gt; -- Hyperlink</li>
-                <li>&lt;img&gt; -- Image</li> 
-                <li>&lt;video&gt; -- Video</li> 
-                <li>&lt;audio&gt; -- Audio</li>
-            </ul>
-            <div>Lists</div> 
-            <ul>
-                <li>&lt;ul&gt; -- unordered list</li>
-                <li>&lt;ol&gt; -- ordered list </li>
-                <li>&lt;li&gt; -- list item</li>
-            </ul>
-            <div>Tables</div> 
-            <ul>
-                <li>&lt;table&gt; -- table</li>
-                <li>&lt;tr&gt; -- table row</li>
-                <li>&lt;td&gt; -- table cell</li>
-                <li>&lt;th&gt; -- table header</li>
-            </ul>
-            <div>Forms</div>
-            <ul>
-                <li>&lt;form&gt; -- form container</li>
-                <li>&lt;input&gt; -- text fields, buttons</li>
-                <li>&lt;textarea&gt; -- long text input</li>
-                <li>&lt;button&gt; -- button</li>
-            </ul>
-    </section>
-
-    <section class="main-section" id="Semantic_HTML">
-        <header>Semantic HTML </header>
+    <section class="main-section" id="Getting_Started">
+        <header><strong>Getting Started</strong></header>
+        
+        <div><big><strong>Opening a Folder or Project</strong></big></div>
         <p>
-            Semantic HTML involves using tags that describe meaning rather than appearance.
-            Examples:</p>
+            <strong>A. To begin coding:</strong>
+            <ol>
+                <li>Click <strong>File > Open Folder.</strong></li>
+                <li>Select your project folder.</li>
+                <li>CS Code will load your file in the Explorer sidebar. </li>
+            </ol>
+        </p>
+
+        <p>
+            <strong>B. Creating a New File</strong>
             <ul>
-                <li>&lt;header&gt; -- top section</li>
-                <li>&lt;nav&gt; -- navigation menu</li>
-                <li>&lt;section&gt; -- main sections</li>
-                <li>&lt;article&gt; -- independent content</li>
-                <li>&lt;aside&gt; -- sidebar</li>
-                <li>&lt;footer&gt; -- bottom section</li>
-            </ul> 
-            <div>Benefits:</div> 
-            <ul>
-                <li>Better for screen readers</li>
-                <li>Improves SEO</li>
-                <li>Makes code cleaner and easier to understand</li>
+                <li>Press <strong>CTRL + N</strong> (Windows/Linux) or <strong>CMD + N</strong> (macOS).</li>
+                <li>Save using <strong>CTRL + S</strong> or <strong>CMD + S.</strong></li>
             </ul>
+        </p>
+
+        <p>
+            <strong>C. Installing Extensions</strong>
+            <ol>
+                <li>Go to the <strong>Extensions</strong> tab (left sidebar).</li>
+                <li>Search for an extension (ex. "Python, Java, C++).</li>
+            </ol>
+        </p>
+
     </section>
 
-    <section class="main-section" id="HTML_vs_CSS_vs_JavaScript">
-        <header>HTML vs CSS vs JavaScript </header>
-        <p>This table explains the differences between HTML, CSS, and JavaScript and how they work together to build a webpage.</p>
-
+    <section class="main-section" id="Common_Shortcuts">
+        <header><strong>Common Shortcuts</strong></header>
         <table border="1" cellpadding="10" cellspacing="0">
             <thead>
                 <tr>
-                    <th>Language</th>
-                    <th>Purpose</th>
-                    <th>What It Controls</th>
-                    <th>Example Usage</th>
+                    <th><strong>Action</strong></th>
+                    <th><strong>Windows/Linux</strong></th>
+                    <th><strong>macOS</strong></th>
                 </tr>
             </thead>
 
             <tbody>
                 <tr>
-                    <td><code>HTML</code></td>
-                    <td>Structure of the webpage</td>
-                    <td>Content: headings, paragraphs, images, links, sections</td>   
-                    <td><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></td>   
+                    <td>Open Command Palette</td>
+                    <td><strong>CTRL + Shift + P</strong></td>
+                    <td><strong>CMD + Shift + P</strong></td>   
                 </tr>
 
                 <tr>
-                    <td><code>CSS</code></td>
-                    <td>Styling and Layout</td>
-                    <td>Colors, Fonts, Borders, Spacing, Responsiveness</td>
-                    <td><code>p { color:blue; }</code></td>
+                    <td>Open Terminal</td>
+                    <td><strong>CTRL + `</strong></td>
+                    <td><strong>CMD + `</strong></td>
                 </tr>
 
                 <tr>
-                    <td><code>JavaScript</code></td>
-                    <td>Interactivity and behavior</td>
-                    <td>Animations, Events, Dynamic Updates, Form Validation</td>
-                    <td><code>alert("Hello World");</code></td>
+                    <td>Quick File Navigation</td>
+                    <td><strong>CTRL + P</strong></td>
+                    <td><strong>CMD + P</strong></td>
+                </tr>
+
+                <tr>
+                    <td>Toggle Sidebar</td>
+                    <td><strong>CTRL + B</strong></td>
+                    <td><strong>CMD + B</strong></td>
+                </tr>
+
+                <tr>
+                    <td>Format Document</td>
+                    <td><strong>Shift + Alt + F</strong></td>
+                    <td><strong>Shift + Option + F</strong></td>
                 </tr>
             </tbody>
         </table>
     </section>
 
-    <section class="main-section" id="Importance_of_HTML_in_Web_Development">
-        <header>Importance of HTML in Web Development</header>
-        <p>HTML is essential because:</p>
-        <ul>
-            <li>It is the foundation of all websites</li>
-            <li>Every web browser understands HTML</li>
-            <li>It works on all devices (phones, tablets, PCs)</li>
-            <li>It is required before learning CSS, JS, or Frameworks</li>
-            <li>HTML5 allows building dynamic, multimedia-rich websites</li>
-        </ul>
-        <p>Without HTML, modern web development would not exist</p>
+    <section class="main-section" id="Integrated_Terminal">
+        <header><strong>Integrated Terminal</strong> </header>
+        
+        <div><big><strong>Opening the Terminal</strong></big></div>
+        <p>You can open the built-in terminal using:
+            <ul>
+                <li><strong>CTRL + `</strong></li>
+                <p>This allows you to run commands, compile, code, manage files, or use Git.</p>
+            </ul>
+        </p>
+            
+        <div><big><strong>Switching Shells</strong></big>
+        <p>
+            You can choose between Command Prompt, PowerShell, Git Bash, or any shell installed in your system.
+        </p>
+    </div> 
     </section>
 
-     <section class="main-section" id="Conclusion">
-        <header>Conclusion</header>
-        <p>HTML is the core language of the web. It defines the structure and layout of every web page and works together with CSS and JavaScript to create functional, visually appealing, and interactive websites. Understanding HTML is the first step toward becoming a web developer, and it remains one of the most important skills in modern technology.</p>
+    <section class="main-section" id="Debugging_in_VS_Code">
+        <header><strong>Debugging in VS Code</strong></header>
+
+        <div><strong>Setting up Debugging</strong>
+        <ol>
+            <li>Open the <strong>Run and Debug</strong> panel.</li>
+            <li>Click <strong>"Create a Launch.json file".</strong></li>
+            <li>Select your language runtime (Node.js, Python, etc.).</li>
+        </ol>
+    </div>
+
+    <div><strong>Common Debug Actions</strong>
+        <ul>
+            <li>Set breakpoints</li>
+            <li>Step over, step into, step out</li>
+            <li>View variables and call stack</li>
+            <li>Watch expressions</li>
+        </ul>
+    </div>
+    </section>
+
+    <section class="main-section" id="Using_Git_in_VS_Code">
+        <header><strong>Using Git in VS Code</strong></header>
+        <div><strong>Initializing a Repository</strong>
+            <ol>
+                <li>Open your project folder</li>
+                <li>Click on the <strong>Source Control</strong> icon.</li>
+                <li>Click <strong>Initialize Repository</strong></li>
+            </ol>
+        </div>
+
+        <div><strong>Making a Commit</strong>
+            <ol>
+                <li>Stage changes with the <big><strong>➕</strong></big> icon.</li>
+                <li>Write a commit message.</li>
+                <li>Click the <big><strong>✔️</strong> check mark.</big> </li>
+            </ol>
+        </div>
+
+        <div><strong>Syncing with GitHub</strong>
+        <p>Ypu can sign in using your GitHub account to push/pull code easily.</p>
+    </div>
+    </section>
+
+    <section class="main-section" id="Customization_Options">
+        <header><strong>Customization Options</strong></header>
+
+        <div><strong>Themes</strong>
+        <p>Go to:
+            <ul>
+                <li><strong>File > Preferences > Color Theme</strong></li>
+            </ul>
+            <p>Choose from light, dark, and custom community themes.</p>
+        </p>
+    </div>
+
+    <div><strong>Changing Font Size</strong>
+        <ul>
+            <li><strong>File > Preferences > Settings</strong></li>
+            <li>Search for <strong>Font Size</strong></li>
+        </ul>
+    </div>
+
+    <div><strong>Keybindings</strong>
+        <p>You can modify shortcuts in:
+            <ul>
+                <li><strong>File > Preferences > Keyboard Shortcuts</strong></li>
+            </ul>
+        </p>
+    </div>
+        </section>
+
+     <section class="main-section" id="Troubleshooting_Tips">
+        <header><strong>Troubleshooting Tips</strong></header>
+        <ol>
+            <li><big><strong>Extensions Not Working</strong></big>
+            <p>Try:</p>
+                <ul>
+                    <li>Reload window <strong>(CTRL + Shift + P → Reload Window)</strong></li>
+                    <li>Disable conflicting extensions</li>
+                </ul>
+            </li>
+
+            <li><big><strong>VS Code Running Slow</strong></big>
+            <p>Consider:</p>
+                <ul>
+                    <li>Closing unused workspaces.</li>
+                    <li>Disabling heavy extensions.</li>
+                    <li>Checking for updates.</li>
+                </ul>
+            </li>
+
+            <li><big><strong>Terminal Not Opening</strong></big>
+            <p>Ensure your default shell is available in your system.</p>
+            </li>
+        </ol>
+    </section>
+
+    <section class="main-section" id="Conclusion">
+        <header><strong>Conclusion</strong></header>
+        <p>Visual Studio Code is a highly flexible and powerful code editor that supports beginners and professionals alike. With its extensions, built-in tools, and ease of use, VS Code has become one of the most popular editors for modern software development.</p>
     </section>
 </main>
 </body>
